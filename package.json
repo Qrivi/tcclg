@@ -4,7 +4,12 @@
   "description": "TeamCity changelog generator",
   "main": "index.js",
   "scripts": {
+    "start": "node index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Qrivi/tccl.git"
   },
   "author": "Kristof Dewilde <kristof.dewilde@designisdead.com>",
   "license": "ISC",
@@ -12,10 +17,12 @@
     "tccl": "./index.js"
   },
   "dependencies": {
+    "base-64": "^0.1.0",
     "chalk": "^2.4.2",
     "clear": "^0.1.0",
     "clui": "^0.3.6",
     "figlet": "^1.2.3",
-    "minimist": "^1.2.0"
+    "minimist": "^1.2.0",
+    "sync-request": "^6.1.0"
   }
 }

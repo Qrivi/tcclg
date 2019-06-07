@@ -6,7 +6,20 @@ const clear = require( 'clear' );
 const figlet = require( 'figlet' );
 const configUtils = require( './lib/configutils' );
 
+async function run(){
+    if( await configUtils.verify( config ) ) {
+        console.log('\nLet\'s get this bread');
+    } else {
+        console.log( 'Please fix your configuration and try again.' );
+        process.exit( 0 );
+    }
+}
+
 clear();
+console.log( 
+    chalk.blue( figlet.textSync( 'TCCLG', { font: 'speed'} )),
+    chalk.blue('\nA gotta go fast changelog generator\n' )
+);
 
 let config;
 if( process.argv[ 2 ] ) {
@@ -20,16 +33,11 @@ if( process.argv[ 2 ] ) {
 }
 if( !config ) {
     config = require( './config/default.json' );
-    console.log( 'Using the default configuration.' );
+    console.log( 'Loaded the default configuration.' );
 }
 
 try {
-    if( configUtils.verify( config ) ) {
-        console.log( chalk.blue( figlet.textSync( 'Let\'s get this bread.', { font: 'small' } )));
-    } else {
-        console.log( 'Please fix your configuration and try again.' );
-        process.exit( 1 );
-    }
+    run();
 } catch ( err ) {
     console.log( chalk.red( 'An exception occured.' ) );
     console.log( err );
