@@ -8,9 +8,9 @@ const configUtils = require( './lib/configutils' );
 
 async function run(){
     if( await configUtils.verify( config ) ) {
-        console.log('\nLet\'s get this bread');
+        console.log('\nConfiguration is OK. Let\'s get this bread.');
     } else {
-        console.log( 'Please fix your configuration and try again.' );
+        console.log( chalk.red('\nPlease fix your configuration and try again.') );
         process.exit( 0 );
     }
 }
