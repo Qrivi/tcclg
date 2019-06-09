@@ -18,7 +18,7 @@ async function run(){
 clear();
 console.log( 
     chalk.blue( figlet.textSync( 'TCCLG', { font: 'speed'} )),
-    chalk.blue('\nA gotta go fast changelog generator\n' )
+    chalk.blue('\nA gotta go fast changelog generator' )
 );
 
 let config;
