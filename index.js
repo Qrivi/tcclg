@@ -11,8 +11,12 @@ async function run(){
     if( await configUtils.verify( config ) ) {
         console.log('\nConfiguration is OK. Let\'s get this bread.');
         config.projects.forEach( project => {
-            if(project.include)
-                console.log(requestUtils.getChanges(config.teamcity, project));
+            if(project.include){
+                let issues = requestUtils.getChanges(project, config.teamcity);
+                if( config.jira )
+                    issues = requestUtils.getIssues(issues, config.jira);
+                console.log(issues);
+            }
         });
     } else {
         console.log( chalk.red('\nPlease fix your configuration and try again.') );
