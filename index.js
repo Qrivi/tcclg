@@ -5,10 +5,15 @@ const chalk = require( 'chalk' );
 const clear = require( 'clear' );
 const figlet = require( 'figlet' );
 const configUtils = require( './lib/configutils' );
+const requestUtils = require( './lib/requestutils' );
 
 async function run(){
     if( await configUtils.verify( config ) ) {
         console.log('\nConfiguration is OK. Let\'s get this bread.');
+        config.projects.forEach( project => {
+            if(project.include)
+                console.log(requestUtils.getChanges(config.teamcity, project));
+        });
     } else {
         console.log( chalk.red('\nPlease fix your configuration and try again.') );
         process.exit( 0 );
