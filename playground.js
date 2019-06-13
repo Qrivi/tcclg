@@ -1,11 +1,9 @@
-const o = {
-    a: 1,
-    c: 3
-};
+#!/usr/bin/env node
 
-console.log(`a is ${o.a}`);
-if(!o.b)
-    console.log('there is no b')
-else
-    console.log(`b is ${o.b}`);
-console.log(`c is ${o.c}`);
+const fs = require('fs');
+const file = fs.createWriteStream('./output/tcclg.log', {flags: 'a'});
+
+for(let i=0; i<= 100; i++) {
+    console.log(i);
+  file.write(i +' Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.\n');
+}
