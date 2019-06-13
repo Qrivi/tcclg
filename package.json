@@ -1,5 +1,5 @@
 {
-  "name": "tccl",
+  "name": "tcclg",
   "version": "1.0.0",
   "description": "TeamCity changelog generator",
   "main": "index.js",
@@ -20,9 +20,6 @@
     "base-64": "^0.1.0",
     "chalk": "^2.4.2",
     "clear": "^0.1.0",
-    "clui": "^0.3.6",
-    "figlet": "^1.2.3",
-    "minimist": "^1.2.0",
     "sync-request": "^6.1.0",
     "table": "^5.4.0"
   }

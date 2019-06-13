@@ -2,13 +2,17 @@
 
 const fs = require( 'fs' );
 const chalk = require( 'chalk' );
-const figlet = require( 'figlet' );
 const logUtils = require( './lib/logutils' );
 const app = require( './app' );
 
 logUtils.clearConsole();
-logUtils.log( chalk.blue( figlet.textSync( 'TCCLG', { font: 'speed' } ) ), true );
-logUtils.log( chalk.blue( 'A gotta go fast changelog generator' ), true );
+logUtils.console( chalk.blue( '_____________________________ _________' ) );
+logUtils.console( chalk.blue( '___  __/_  ____/_  ____/__  / __  ____/' ) );
+logUtils.console( chalk.blue( '__  /  _  /    _  /    __  /  _  / __  ' ) );
+logUtils.console( chalk.blue( '_  /   / /___  / /___  _  /___/ /_/ /  ' ) );
+logUtils.console( chalk.blue( '/_/    \\____/  \\____/  /_____/\\____/   ' ) );
+logUtils.console( chalk.blue( 'A gotta go fast changelog generator    ' ) );
+logUtils.log( 'Starting TCCLG.' );
 logUtils.newLine();
 
 let config;
