@@ -10,7 +10,7 @@ logUtils.console( chalk.blue( '_____________________________ _________' ) );
 logUtils.console( chalk.blue( '___  __/_  ____/_  ____/__  / __  ____/' ) );
 logUtils.console( chalk.blue( '__  /  _  /    _  /    __  /  _  / __  ' ) );
 logUtils.console( chalk.blue( '_  /   / /___  / /___  _  /___/ /_/ /  ' ) );
-logUtils.console( chalk.blue( '/_/    \\____/  \\____/  /_____/\\____/   ' ) );
+logUtils.console( chalk.blue( '/_/    \\____/  \\____/  /_____/\\____/' ) );
 logUtils.console( chalk.blue( 'A gotta go fast changelog generator    ' ) );
 logUtils.log( 'Starting TCCLG.' );
 logUtils.newLine();
@@ -29,5 +29,5 @@ if( !config ) {
     logUtils.log( 'Loaded the default configuration.', true );
 }
 
-app.run( config )
-    .catch( err => app.interrupt( err ) );
+process.on( 'exit', () => { logUtils.newLine(); } );
+app.run( config ).catch( err => app.interrupt( err ) );
