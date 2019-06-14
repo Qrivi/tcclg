@@ -1,18 +1,27 @@
 const configUtils = require('./lib/configutils')
 const logUtils = require('./lib/logutils')
+const printUtils = require('./lib/printutils')
 const requestUtils = require('./lib/requestutils')
 
 async function run (config) {
   if (await configUtils.verify(config)) {
     logUtils.log('Configuration is OK. Let\'s get this bread.')
+
+    const changeData = []
+
     config.projects.forEach(project => {
       if (project.include) {
-        let issues = requestUtils.getChanges(project, config.teamcity)
-        if (issues && config.jira) {
-          issues = requestUtils.getIssues(issues, config.jira)
+        let changes = requestUtils.getChanges(project, config.teamcity)
+        if (changes.status === 'ok') {
+          changes.issues = requestUtils.getIssues(changes.commits, config.jira)
+          changeData.push(changes)
+        } else {
+          console.log(`\n TODO implement this scenario: Bad changes for ${project.name}`)
         }
       }
     })
+    printUtils.toJson(changeData, config.preferences)
+    printUtils.toMarkdown(changeData, config.preferences)
   } else {
     logUtils.newLine()
     logUtils.error('Please fix your configuration and try again.', true)

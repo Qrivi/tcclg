@@ -1,0 +1,90 @@
+[
+  {
+    "name": "Octopus / CQ",
+    "status": "ok",
+    "currentBuild": "1.42.2-r24065",
+    "latestBuild": "1.42.2-r24107",
+    "branch": "maintenance/1.42",
+    "commits": [
+      "BASE-2621: fix tariffselector tealium initialising on home page\n\n",
+      "Merge pull request #511 in DID/cq from FEATURES/cq:feature/BASE-2621 to maintenance/1.42\n\n* commit '85918a6a2aab28f522ea502741c3e6fa3b6bdf6e':\n  BASE-2621: fix tariffselector tealium initialising on home page\n",
+      "BASE-2722: implement cq_template\n",
+      "BASE-2722: implement labels for options\n",
+      "BASE-2722: implement first compare table\n",
+      "BASE-2722: add labels\n",
+      "BASE-2722: update template + implement components\n",
+      "BASE-2722: add missing label\n",
+      "BASE-2722: apply updated CSS\n",
+      "BASE-2722: add postpaid options roaming\n",
+      "BASE-2722: add options on prepaid\n",
+      "BASE-2722: remove wrong char in JSON file\n",
+      "BASE-2722: add missing zones\n",
+      "BASE-2722:  add invert selection button\n\n",
+      "Merge remote-tracking branch 'features/feature/BASE-2722' into feature/BASE-2722\n",
+      "BASE-2722: change 0 value to free\n",
+      "BASE-2722: update typo sms to SMS\n",
+      "BASE-2722: add data property in table\n",
+      "BASE-2722: add check on undefined of Data price\n",
+      "BASE-2722: use country instead of zone\n\n",
+      "Merge branch 'feature/BASE-2722' of http://vm-srv270.domain01.homebase.be:7990/scm/features/cq into feature/BASE-2722\n",
+      "BASE-2722: Show promo's for data\n",
+      "BASE-2722: implement roaming\n\n",
+      "Merge branch 'feature/BASE-2722' of http://vm-srv270.domain01.homebase.be:7990/scm/features/cq into feature/BASE-2722\n",
+      "BASE-2722: Hide options on Author\n",
+      "BASE-2722: Fix promo zoneTo based on roaming zone\n",
+      "BASE-2722: refactoring\n\n",
+      "Merge pull request #510 in DID/cq from FEATURES/cq:feature/BASE-2722 to maintenance/1.42\n\n* commit '62b3ec29c544277ccf5071fa3b017389722d2bb2': (22 commits)\n  BASE-2722: refactoring\n  BASE-2722: Fix promo zoneTo based on roaming zone\n  BASE-2722: Hide options on Author\n  BASE-2722: implement roaming\n  BASE-2722: Show promo's for data\n  BASE-2722: use country instead of zone\n  BASE-2722: add check on undefined of Data price\n  BASE-2722: add data property in table\n  BASE-2722: update typo sms to SMS\n  BASE-2722: change 0 value to free\n  BASE-2722: add missing zones\n  BASE-2722:  add invert selection button\n  BASE-2722: remove wrong char in JSON file\n  BASE-2722: add options on prepaid\n  BASE-2722: add postpaid options roaming\n  BASE-2722: apply updated CSS\n  BASE-2722: add missing label\n  BASE-2722: update template + implement components\n  BASE-2722: add labels\n  BASE-2722: implement first compare table\n  ...\n",
+      "bug: fix roaming tool not working\n\n",
+      "CC01712923:  Issue with mobile detection on Ingenico templates\n\n",
+      "CC01712923: fix checkstyle\n\n",
+      "CC01712923: fix unit tests\n\n",
+      "change const to var\n\n",
+      "BASE-2178: update navigational block\n\n",
+      "Merge pull request #513 in DID/cq from FEATURES/cq:feature/BASE-2178 to maintenance/1.42\n\n* commit 'ef5f7c09a598155c342e66cd14c86229441b3ec0':\n  BASE-2178: update navigational block\n",
+      "BASE-2890: Update GDPR label\n",
+      "Merge pull request #514 in DID/cq from FEATURES/cq:feature/BASE-2890 to maintenance/1.42\n\n* commit 'ec242abde8f12c1e1c4f49ac5b71ca750a79555c':\n  BASE-2890: Update GDPR label\n",
+      "BASE-6: Add checkbox to hide title\n",
+      "BASE-6: Make it visible for an author that a title isn't showed\n",
+      "BASE-6: Check if title is empty\n",
+      "BASE-6: correct indenting\n",
+      "Merge pull request #515 in DID/cq from FEATURES/cq:feature/BASE-6 to maintenance/1.42\n\n* commit '40b317269fc3460a7096ddd04d1dbdf1b8a4d552':\n  BASE-6: correct indenting\n  BASE-6: Check if title is empty\n  BASE-6: Make it visible for an author that a title isn't showed\n  BASE-6: Add checkbox to hide title\n"
+    ],
+    "issues": [
+      {
+        "key": "BASE-2621",
+        "link": "https://jira.rel.apps.telenet.be/browse/BASE-2621",
+        "title": "Tariff selector - check STEP 1 launch",
+        "status": "Done",
+        "include": true
+      },
+      {
+        "key": "BASE-2722",
+        "link": "https://jira.rel.apps.telenet.be/browse/BASE-2722",
+        "title": "International & roaming tool - Development phase 3",
+        "status": "Done",
+        "include": true
+      },
+      {
+        "key": "BASE-2178",
+        "link": "https://jira.rel.apps.telenet.be/browse/BASE-2178",
+        "title": "Update navigational block component",
+        "status": "In Progress",
+        "include": false
+      },
+      {
+        "key": "BASE-2890",
+        "link": "https://jira.rel.apps.telenet.be/browse/BASE-2890",
+        "title": "Update label GDPR form ",
+        "status": "In Progress",
+        "include": false
+      },
+      {
+        "key": "BASE-6",
+        "link": "https://jira.rel.apps.telenet.be/browse/BASE-6",
+        "title": "As an author, I want to have optional instead of mandatory FGM titles, so that we have more flexibility at setting up FGM's",
+        "status": "Ready",
+        "include": false
+      }
+    ]
+  }
+]
