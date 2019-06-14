@@ -29,10 +29,19 @@
     "standardx": "^3.0.1"
   },
   "eslintConfig": {
+    "parserOptions": {
+        "ecmaVersion": 2017
+    },
+    "env": {
+        "es6": true
+    },
     "rules": {
       "brace-style": [
-          "error",
-          "1tbs"
+        "error",
+        "1tbs"
+      ],
+      "no-console": [
+        "warn"
       ]
     }
   }
