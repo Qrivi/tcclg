@@ -1,0 +1,44 @@
+{
+    "preferences": {
+        "skipProjectIfNoChanges": false,
+        "changesListFormatting": "markdown",
+        "printPrettyJson": true
+    },
+    "teamcity": {
+        "url": "https://teamcity.url",
+        "username": "kdewilde",
+        "password": "P@ssw0rd"
+    },
+    "jira": [{
+            "include": true,
+            "url": "https://specific-jira.url",
+            "username": "kdewilde",
+            "password": "P@ssw0rd",
+            "projectKey": "BASE",
+            "acceptedStatusses": ["Done"]
+        },
+        {
+            "include": true,
+            "url": "https://another-jira.url",
+            "username": "kristof.dewilde@telenetgroup.be",
+            "password": "xsiuLEHcNgkca14McA9cF976",
+            "projectKey": "TANK",
+            "acceptedStatusses": ["R4DFI", "Bug Done"]
+        }
+    ],
+    "projects": [{
+        "include": true,
+        "name": "Octopus / CQ",
+        "branch": "maintenance/1.42",
+        "buildType": "Octopus_IntegrationBuild",
+        "build": "1.42.2-r24065",
+        "xbuild": "https://www.octopus.url/eservices/version"
+    },
+    {
+        "include": false,
+        "name": "Tank",
+        "branch": "develop",
+        "buildType": "TankDeliveryPipeline_Ci_1IntegrationBuild",
+        "build": "http://ta.nk/version"
+    }]
+}
