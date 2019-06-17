@@ -1,7 +1,7 @@
 {
   "name": "tcclg",
   "version": "1.0.0",
-  "description": "TeamCity changelog generator",
+  "description": "TeamCity Changelog Generator",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
@@ -14,7 +14,7 @@
     "url": "https://github.com/Qrivi/tccl.git"
   },
   "author": "Kristof Dewilde <kristof.dewilde@designisdead.com>",
-  "license": "ISC",
+  "license": "MIT",
   "bin": {
     "tccl": "./index.js"
   },
