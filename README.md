@@ -4,7 +4,7 @@ Converts a very time consuming monkey job in a one line command monkey job. 🙈
 
 ![Example flow](https://i.imgur.com/vLCAQCm.gif)
 
-Run this script by either running  `node index.js [config.json]` or `npm start [config.json]`. If `config.json` is omitted, the default config in `config/default.json` will be used.
+Run this script by either running  `node index.js [config.json]` or `npm start [config.json]`. If `config.json` is omitted, the default config in `config/default.json` will be used. Logs will be in `log/`, output will be in `output/`!
 
 ## Configuration
 
