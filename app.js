@@ -15,13 +15,13 @@ async function run (config) {
         if (changes.status === 'ok') {
           changes.issues = requestUtils.getIssues(changes.commits, config.jira)
           changeData.push(changes)
-        } else {
-          console.log(`\n TODO implement this scenario: Bad changes for ${project.name}`)
         }
       }
     })
+    logUtils.newLine()
     printUtils.toJson(changeData, config.preferences)
     printUtils.toMarkdown(changeData, config.preferences)
+    logUtils.success('Done!', true)
   } else {
     logUtils.newLine()
     logUtils.error('Please fix your configuration and try again.', true)
