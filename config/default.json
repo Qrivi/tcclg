@@ -1,7 +1,7 @@
 {
     "preferences": {
-        "skipProjectIfNoChanges": false,
         "changesListFormatting": "markdown",
+        "skipProjectIfNoChanges": true,
         "printPrettyJson": true
     },
     "teamcity": {
@@ -31,8 +31,7 @@
         "name": "Octopus / CQ",
         "branch": "maintenance/1.42",
         "buildType": "Octopus_IntegrationBuild",
-        "build": "1.42.2-r24065",
-        "xbuild": "https://www.octopus.url/eservices/version"
+        "build": "1.42.2-r24065"
     },
     {
         "include": false,
