@@ -70,3 +70,6 @@ The id of your TeamCity build configuration (`BuildType.id`) that takes care of 
 
 #### `projects.build`
 Build number after which changes need to be logged. You can also provide a URL here, in which case TCCLG will attempt to fetch the build number from that URL. This is very neato if your project has a version endpoint.
+
+#### `projects.buildBranch`
+Optional, the branch from which the current build was built, in case this branch is different from the one based on which the change log will be generated.
