@@ -21,6 +21,7 @@ if (process.argv[ 2 ]) {
     config = JSON.parse(fs.readFileSync(process.argv[ 2 ]))
     logUtils.log(`Configuration file at ${process.argv[ 2 ]} will be used.`, true)
   } catch (err) {
+    logUtils.error(err);
     logUtils.warn(`Configuration file at ${process.argv[ 2 ]} could not be read.`, true)
   }
 }
