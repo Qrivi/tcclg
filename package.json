@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "TeamCity Changelog Generator",
   "main": "index.js",
+  "bin": {
+    "tccl": "./index.js"
+  },
   "scripts": {
     "start": "node index.js",
     "lint": "standardx",
@@ -15,8 +18,9 @@
   },
   "author": "Kristof Dewilde <kristof.dewilde@designisdead.com>",
   "license": "MIT",
-  "bin": {
-    "tccl": "./index.js"
+  "engines": {
+    "node": ">=11.0.0",
+    "npm": ">=6.0.0"
   },
   "dependencies": {
     "base-64": "^0.1.0",
