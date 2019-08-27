@@ -4,7 +4,7 @@
   "description": "TeamCity Changelog Generator",
   "main": "index.js",
   "bin": {
-    "tccl": "./index.js"
+    "tcclg": "./index.js"
   },
   "scripts": {
     "start": "node index.js",
@@ -30,7 +30,7 @@
     "table": "^5.4.0"
   },
   "devDependencies": {
-    "standardx": "^3.0.1"
+    "standardx": "^5.0.0"
   },
   "eslintConfig": {
     "parserOptions": {
